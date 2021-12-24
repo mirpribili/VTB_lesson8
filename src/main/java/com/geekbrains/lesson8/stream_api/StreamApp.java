@@ -25,7 +25,13 @@ public class StreamApp {
     public static void main(String[] args) {
         streamSimpleTask();
 
-
+        // Теперь по шагам о каждой модификации потока из прим. выше.
+        // дана коллекция состоя. из чисел
+        List<Integer> integers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8));
+        // если хотим преобразовать к потоку данных (трубы с нашими данными)
+// есть 2 типа операций над потоками Промежуточные и Конечные.
+        // без терминальной операции ничего не выполнится например .forEach();
+        integers.stream();
 
     }
     private static void streamSimpleTask () {
